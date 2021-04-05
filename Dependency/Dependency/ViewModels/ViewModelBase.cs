@@ -17,18 +17,18 @@ namespace Dependency.ViewModels
         public string Orientation { get; set; }
         public string Text { get; set; }
         public ICommand GetDeviceOrientation { get; }
-        private IOrientationService _OrientationService;
+        private IOrientationService OrientationServices;
 
         public ViewModelBase(INavigationService navigationService, IPageDialogService pageDialogService,
            IOrientationService OrientationService) : base(navigationService, pageDialogService)
         {
-            _OrientationService = OrientationService;
+            OrientationServices = OrientationService;
             GetDeviceOrientation = new DelegateCommand(GetOrientation);
         }
 
         public void GetOrientation()
         {
-            var orientation = _OrientationService.GetOrientation();
+            var orientation = OrientationServices.GetOrientation();
             Orientation = orientation.ToString();
         }
     }
