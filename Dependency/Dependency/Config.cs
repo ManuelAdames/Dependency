@@ -8,6 +8,6 @@ namespace Dependency
     {
         public const string Home = "/Navigate/MainPage";
         public const string Navigate = "Navigate";
-        public const string Title = "Xamarin App";
+        public const string Title = "Dependency App";
     }
 }

@@ -67,11 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Effects\FocusEffect.cs" />
-    <Compile Include="MainApplication.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\MyEntryRenderer.cs" />
     <Compile Include="Services\OrientationService.cs" />
-    <Compile Include="SplashActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <LinkDescription Include="LinkerSettings.xml" />
   </ItemGroup>

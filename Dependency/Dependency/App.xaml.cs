@@ -7,7 +7,7 @@ using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Dependency.ViewModels;
-using Prism.DryIoc;
+using Prism.Unity;
 
 namespace Dependency
 {

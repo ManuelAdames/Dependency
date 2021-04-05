@@ -12,7 +12,7 @@ using Dependency.Controls;
 using Dependency.Droid.Renderers;
 
 [assembly: ExportRenderer(typeof(MyEntry), typeof(MyEntryRenderer))]
-namespace Dependency.Renderers
+namespace Dependency.Droid.Renderers
 {
     class MyEntryRenderer : EntryRenderer
     {
