@@ -11,13 +11,13 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <StackLayout Padding="20">
-            <Label Text="Device Orientation" FontAttributes="Bold" HorizontalOptions="Center" />
-            <Button Text="Get Device Orientation" Command="{Binding GetDeviceOrientation}" android:Button.UseDefaultPadding="true" android:Button.UseDefaultShadow="true"/>
+            <Label Text="Device Orientation" HorizontalOptions="Center" />
+            <Button Text="Get Device Orientation" Command="{Binding GetDeviceOrientation}" android:Button.UseDefaultPadding="true" />
             <Label x:Name="orientationLabel" Text="{Binding Orientation}" TextColor="Black" HorizontalOptions="Center" />
         </StackLayout>
         <StackLayout>
-            <controls:MyEntry Placeholder="Entry using Renderers"/>
-            <Entry Placeholder="Entry using Effects">
+            <controls:MyEntry Placeholder="Renderers"/>
+            <Entry Placeholder="Effects">
                 <Entry.Effects>
                     <effects:FocusEffect/>
                 </Entry.Effects>
